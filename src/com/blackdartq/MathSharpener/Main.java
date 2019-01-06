@@ -11,8 +11,9 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("mainWindow.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 500, 350));
+        root.getStylesheets().add("mainWindow.css");
+        primaryStage.setTitle("Math Sharpener");
+        primaryStage.setScene(new Scene(root, 1000, 700));
         primaryStage.show();
     }
 

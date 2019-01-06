@@ -11,19 +11,25 @@
 <BorderPane fx:controller="com.blackdartq.MathSharpener.Controller"
             xmlns:fx="http://javafx.com/fxml">
     <top>
-        <VBox alignment="CENTER">
+        <VBox alignment="CENTER" spacing="5" fx:id="topBar">
             <Label text="Score: 0:0" fx:id="scoreLabel"></Label>
             <Label fx:id="statusLabel"></Label>
+            <HBox spacing="30" alignment="CENTER" fx:id="topBar2">
+                <Button text="Easy" fx:id="easyButton" onMouseClicked="#setHardnessEasy"></Button>
+                <Button text="Medium" fx:id="mediumButton" onMouseClicked="#setHardnessMedium"></Button>
+                <Button text="Hard" fx:id="hardButton" onMouseClicked="#setHardnessHard"></Button>
+            </HBox>
         </VBox>
     </top>
     <center>
-        <Label fx:id="mathLabel">
-
-        </Label>
+        <VBox alignment="BOTTOM_CENTER" fx:id="center">
+            <Label fx:id="mathLabel"></Label>
+            <TextArea fx:id="scratchPadTextArea"></TextArea>
+        </VBox>
     </center>
     <bottom>
-        <VBox alignment="CENTER" spacing="2.0">
-            <TextField maxWidth="63" maxHeight="10" fx:id="answerTextField"></TextField>
+        <VBox alignment="CENTER" spacing="2.0" fx:id="bottom">
+            <TextField maxWidth="200" maxHeight="10" fx:id="answerTextField" alignment="CENTER"></TextField>
             <Button text="Submit" fx:id="submitButton" onMouseClicked="#checkAnswer"></Button>
             <Label></Label>
         </VBox>

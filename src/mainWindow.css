@@ -1,0 +1,46 @@
+.button{
+    -fx-text-fill: white;
+    -fx-background-color: #034078;
+}
+
+.button:hover{
+    -fx-background-color: #117e9c;
+}
+
+.button:clicked{
+    -fx-background-color: #117e9c;
+}
+
+.label{
+    -fx-text-fill: black;
+
+}
+
+#topBar{
+    -fx-background-color: #17acd6;
+    -fx-padding: 3 6 6 6;
+    -fx-font-size: 20;
+}
+
+#center{
+    -fx-padding: 12 6 6 6;
+    -fx-background-color: #cee9f9;
+    -fx-font-size: 20;
+}
+
+#mathLabel{
+    -fx-font-size: 60;
+}
+
+#scratchPadTextArea{
+    -fx-max-width: 900;
+    -fx-border-style: solid;
+    -fx-border-width: 3;
+}
+
+#bottom{
+    -fx-background-color: #1c77c3;
+    -fx-padding: 6 6 6 6;
+    -fx-font-size: 20;
+    -fx-spacing: 6;
+}
